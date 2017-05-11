@@ -1,0 +1,8 @@
+{% macro common(cdString = '') %}
+
+<link rel="shortcut icon" type="image/x-icon" href="{{ cdString }}assets/favicon.png" />
+
+<script src="{{ cdString }}assets/javascript/jquery.min.js"></script>
+<script src="{{ cdString }}assets/javascript/mobile-menu.js"></script>
+
+{% endmacro %}

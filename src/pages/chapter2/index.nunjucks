@@ -1,0 +1,478 @@
+{% extends "chapter-preview.nunjucks" %}
+{% set chapterNumber = 2 %}
+
+{% block chapter %}
+
+    <div id="chapter2" class="chapter-spacer">&#8203;</div>
+    <h1><span>Chapter 2</span></h1>
+
+    <p align=center class="chapter-time"><i><span
+    >After</span></i></p>
+
+    <p class="no-indent"><span
+    >A chill
+ran down Phi’s spine, only justified moments later by a salty gust of wind. His
+jacket clung to him for safety. It was hard to believe the Factory had only
+been shut down for less than a week. As he crept down the high street, Phi
+couldn’t help but notice how alien it looked with no one in it. The street was
+an unfamiliar collection of stones, carefully laid out, waiting to become a
+street, if only people would walk on it. </span></p>
+
+    <p><span
+    >A
+shot rang out. Phi froze, still and lifeless as the scene around him. His heart
+raced as he peered up and down the street. There was a commotion up ahead. He
+ducked down an alleyway and hid behind a dustbin. His pulse refused to slow. He
+waited until the shouts faded into the distance, then he waited some more. A
+pang of Loneliness blew in on the south wind. He breathed it deeply and felt
+stranded. Now that Aula was gone, he was all alone. </span></p>
+
+    <p><span>Clink.</span></p>
+
+    <p><span>Smash.</span></p>
+
+    <p><span
+    >A
+glass bottle fragmented on the cobbles right beside him. Panic sprang through Phi’s
+legs and he launched himself from his hiding place. He relaxed when he realised
+it was a grazer digging through the rubbish.</span></p>
+
+    <p><span
+    >“Just
+an adult,” he muttered to himself. He took a closer look and recognised the
+snooty old woman who had laughed at Aula’s dancing all those months ago.</span></p>
+
+    <p><span>The
+woman had her arms buried in the bin up to her shoulders. She groped around in
+the foul-smelling pile, displacing cans, peels and wrappers as she went. A
+stray feelone pawed through the rejected scraps. The woman finally extracted a
+half-eaten apple. She inspected it with vacant eyes before indiscriminately
+sinking her teeth into its rotting flesh. Phi looked on in Disgust.</span></p>
+
+    <p><span
+    >“You
+don’t want to eat that,” he said.</span></p>
+
+    <p><span
+    >The
+woman turned to look at the boy who had addressed her. There was no flicker of
+recognition. The woman turned back to her apple and took another bite. Phi
+slapped the apple out of her hand. She winced, but no Anger crossed her face.
+Not even Annoyance. Just...nothing. </span></p>
+
+    <p><span>
+Their wordless parlance was interrupted by the trudging of boots down the road. Phi flew behind the bin. He peeked out as a troop of Gaspers marched by.
+</span></p>
+
+    <p><span>
+Thump. Thump. Thump.
+</span></p>
+
+    <p><span><i>
+Just keep marching</i>, Phi urged.</span></p>
+
+    <p><span>
+Thump…
+</span></p>
+
+    <p><span>
+The marching stopped.
+</span></p>
+
+    <p><span>
+Phi’s heart was racing.
+</span></p>
+
+    <p><span>
+One of the Gaspers stepped purposefully into the alleyway. The big, white protective suit creaked as it turned its helmet to survey Phi’s alleyway. It’s faceless, mirrored gaze scanned mechanically across the passage. The outfit reminded Phi of a deep-sea diving suit. The helmet even had a hose running from the back, which snaked into a canister of Feelings on the Gasper’s back. A pained gasping could be heard as the thing breathed. It was a curt, ghastly sound that often woke Phi in a sweat.
+</span></p>
+
+    <p><span>
+The Gasper inspected the old woman and her apple. Each face reflected the lifelessness of the other. The feelone slinked figures of eight around the woman’s legs, hissing at the intruder as it approached. Taking another creaky step into the alleyway, the suited figure looked past the woman. It was standing right next to the dustbin now, gripping and re-gripping its musket. Phi squeezed himself into the corner, urging himself invisible. He choked down his breath, trying to stay absolutely silent.
+</span></p>
+
+    <p><span>
+The Gasper was close now.
+</span></p>
+
+    <p><span>
+Gasp.
+</span></p>
+
+    <p><span>
+Rasp.
+</span></p>
+
+    <p><span>
+Step.
+</span></p>
+
+    <p><span>
+Clang.
+</span></p>
+
+    <p><span>A
+noise across the street snatched the Gaspers’ attention. They turned in unison.
+One of the others broke ranks to investigate. It advanced slowly into the empty
+street, scanning up and down.</span></p>
+
+    <p><span>Suddenly
+a chorus of battle cries rang out, heralding a gang of filthy teenagers. It had
+been only a few days since the Factory had shut down, but the tattered group
+already looked feral. They shook spears and rocks above their
+heads, as if these talismans might protect them from the cold, heartless
+muskets wielded by the cold, heartless Gaspers. Some of them had painted the
+mythical Tyrag on their shields, hoping that its leathery wings and huge teeth
+would keep the white suits at bay. Reckless roars echoed from faces smeared
+with greasy war paint.</span></p>
+
+    <p><span>The
+tribe attacked, pelting the Gasper with rocks and spears from across the street.
+It put up its arms to shield itself, but it wasn’t quick enough to stop a rock
+crunching into its visor. With a crack and a hiss, Feelings started whistling out
+of its helmet. It dropped its musket and clutched frantically at its mask,
+trying in vain to stem the breach. After only a few seconds, the Feelings were
+all gone. The Gasper whirred slowly to a perfect stop, like a wind-up toy
+at the end of its spring.</span></p>
+
+    <p><span>The
+remaining Gaspers responded with a barrage of gunfire, but the gang had already
+scattered across rooftops and down alleyways. They leapt, swung and dashed into
+their nooks like artists off a stage. Within seconds they were gone. The soldiers
+thumped down the street in pursuit.</span></p>
+
+    <p><span>Phi
+and the woman were left to themselves once more. The feelone tired of the
+woman. She didn’t have any useful Feelings. Instead, the cat purred and rubbed herself
+up against Phi’s leg. Phi felt it sap at his Loneliness. It felt good. For a
+second he forgot how much he missed Aula, and his father, and having somebody –
+anybody – to talk to. </span></p>
+
+    <p><span
+    >Phi
+fought the urge to stay stroking the feelone. He pushed the cat away and
+hurried down the high road until he got to the town square. Canvas awnings haunted
+empty stalls. Phi moved swiftly through the ghost market. He crinkled his nose
+at the rank smell of victims of another lost battle.</span></p>
+
+    <p><span
+    >The
+high street dutifully continued on the other side of the square. He slinked
+past the vacant stores until he was finally outside Mr. Reese’s Mysteries and
+Sentimentorium.</span></p>
+
+    <p><span>The
+run-down old shop had never been in a great state, but it had always had a
+certain charm. The wonky purple sign and the door that never closed properly
+had given the shop character and made it unique. Now, with the crooked sign jittering
+in the sea breeze, the miserable shop fit in perfectly with the rest of the deserted
+town.</span></p>
+
+    <p><span>Phi
+forced the door open, sweeping out an arc through a pile of broken glass. He
+inspected the bottles on the floor, but they were all smashed to pieces. Their
+labels read everything from Happiness to Wrath to Playfulness to Ambivalence.
+All the Emotions had diffused into the air, mixing up a headache-inducing
+cocktail that made Phi stagger as he entered. </span></p>
+
+    <p><span>The
+animals were making a din. The gladradors scratched at their cages. The
+felicities flitted uselessly against the tops of their boxes. The sloth-like
+exomniacs snuffled and scraped at the floor. Out of habit, or duty, or perhaps
+both, Phi tore open a bag of pet food kept by the cages. Then he realised there
+was no point in keeping them all locked up like this, so he just tipped the food
+on the floor and let the animals free. There was an even greater racket as the
+cages swung open and the animals howled for their freedom, scrambling,
+scratching and flapping about the shop. Some of them darted straight for the
+door. Some plunged their heads immediately into the food. Phi scratched behind
+the ears of one of the gladradors, warming himself just briefly in its
+Happiness.</span></p>
+
+    <p><span>Phi’s
+feet crunched on broken glass with every step he took. Everything he and Aula
+had so carefully laid out on the shelves now lay shattered on the floor. Phi gravelled
+his way to the tipped-up shelf that was once home to what he needed. The
+contents of the shelf were strewn across the floor, just like everything else. He
+picked up a cracked bottle and sniffed at it. The contents were all gone. His
+heart sank.</span></p>
+
+    <p><span>There
+was still one place left to check. Phi hopped over the counter and slipped into
+the back room. Dust drew patterns in what little light there was. Phi peered
+into the darkness, straining to read the labels scrawled on the crates in Mr.
+Reese’s illegible handwriting. Spotting what he wanted, Phi unfolded the
+rickety old stepladder and clambered up. He was immediately disheartened by the
+box’s lightness as he slid it off the shelf. He ripped the top open and
+rummaged. Endless reams of packing paper issued from the box, but he found no
+bottles. He sighed and threw the box to the floor.</span></p>
+
+    <p><span>He
+heard a tiny clink.</span></p>
+
+    <p><span>Phi
+leapt from the ladder, landing beside the box with a thud. He tore out the rest
+of the packing paper and found one lonely, little bottle sitting in the box. He
+cradled it in his hands and checked it over for cracks. With a smile, he swaddled
+his prize in some paper and tucked it into his jacket pocket.</span></p>
+
+    <p><span>Something
+clattered further back in the shop. Phi crept out of the store room and tiptoed
+towards the little kitchen. He poked his head around the doorframe, and
+something swung at him violently. Phi ducked, and the weapon clanged against the
+doorframe with a thud. </span></p>
+
+    <p><span>“Take
+that!” Mr. Reese stood defiantly in the kitchen, wielding his saucepan. The
+contents (an unchopped carrot and an unappetising, grey sauce) had been strewn
+across the floor. The shop’s proprietor got ready to take another swing.</span></p>
+
+    <p><span>“Mr.
+Reese! It’s me, Phi!”</span></p>
+
+    <p><span>The
+old man squinted at Phi and lowered his weapon. “Well, well, well! Raphael
+Rayleigh! I always knew it would take the end of the world for you to be more
+punctual than Aula.” He chuckled to himself. “I’d offer you some soup, but I’m
+afraid it’s on the floor. Anyway. Glad to see you young’uns are all right. No
+hope for us adults without the Factory pumping out Emotions, but you kids do
+think with your hearts after all, eh! Just like Aula always said.” Mr. Reese
+stopped talking abruptly. “And…can…Aula…still…?”</span></p>
+
+    <p><span>Phi
+shook his head, handing Mr. Reese the bottle he had taken from the store room.</span></p>
+
+    <p><span>“I
+see,” said Mr. Reese contemplatively. He scratched at his whiskers and chewed
+his gums. “Terrible thing that’s happened, isn’t it? Heck, even with everything
+smashed in here, there’s barely enough Emotions to last me another day. Not
+like I can go anywhere. Soon as I step out of that door, I’ll just be another
+one of those mindless goons I used to call customers.” He chuckled again.</span></p>
+
+    <p><span>“How
+do I fix it?” asked Phi.</span></p>
+
+    <p><span>“Fix
+it?” parroted the old man. “Pah! Only one way to fix it, isn’t there?”</span></p>
+
+    <p><span>“Turn
+the Factory back on?”</span></p>
+
+    <p><span>“Bingo!”</span></p>
+
+    <p><span>“Well
+that’s what I’m going to do!” announced Phi.</span></p>
+
+    <p><span>Mr.
+Reese wheezed a spluttering laugh. “You always could bring a smile to my face,”
+he said, clapping Phi on the back.</span></p>
+
+    <p><span>“I’m
+serious!” said Phi.</span></p>
+
+    <p><span>The
+old man frowned.</span></p>
+
+    <p><span>“You
+know you’ll ‘ave to cross the Sadlands to get there?”</span></p>
+
+    <p><span>“I
+know,” said Phi.</span></p>
+
+    <p><span>“There’s
+things out there even I ain’t ever laid eyes on,” warned the old man. He spoke
+slowly, with a gravity Phi had never seen before. “And that’s after you’ve made
+it past all these mugs in their rubber suits and wellies. There’s bound to be
+more of ‘em at the Factory. You think the Regent’ll be in a hurry to let you
+turn that thing back on? Heck, if you made it that far, you’d be better off
+just headin’ for the Gladlands. There’s spots out there got Feelings enough
+even without the Factory.”</span></p>
+
+    <p><span>“Really?”</span></p>
+
+    <p><span>“Sure!
+How’d you think we got along without the Factory before? Why d’you think the
+Capital’s where it is? En’t they teachin’ you anythin’ in that fancy school o’
+yours?”</span></p>
+
+    <p><span>“They
+teach me plenty!” said Phi. “I know I’d have to head inland for the Yearning
+River. I’d have to follow that through the Sadlands to the Lovely Lakes. I know
+there’s about a thousand different species of creatures that live out there in
+the Sadlands. I know about the war for unification that got fought across the
+Long Plains –”</span></p>
+
+    <p><span>“All
+right, all right, all right,” said Mr. Reese. The old man sighed. “Phi, I never
+lie to you. Actually, that’s a lie. I lie to you all the time. But this ain’t a
+lie: the Sadlands are too dangerous. Look at me, Raphael. Look me in the eye
+and promise me you won’t go wandering out into the Sadlands.” Deep Worry lines knitted
+themselves across Mr. Reese’s brow.</span></p>
+
+    <p><span>Phi
+frowned.</span></p>
+
+    <p><span>“Promise
+me, Raphael! I won’t let you leave this shop ‘til you do!”</span></p>
+
+    <p><span>“I
+promise,” muttered Phi.</span></p>
+
+    <p><span>“Look
+me in the eye an’ say it!”</span></p>
+
+    <p><span>“I
+promise,” said Phi in his most convincing voice.</span></p>
+
+    <p><span>“Attaboy,”
+wheezed the old man. “Well, you’d best get back with this.” Mr. Reese handed
+back the bottled Emotion, and patted Phi on the shoulder as they walked back to
+the counter.</span></p>
+
+    <p><span>“Goodbye,
+Mr. Reese.”</span></p>
+
+    <p><span>“Goodbye,
+Phi. And good luck. Try to stay out of trouble.” The Worry lines had drawn
+themselves across the old man’s face again. </span></p>
+
+    <p><span>It
+may have taken the same amount of time, but the return trip felt like slow
+going. By the time the sixth troop of Gaspers filed past, Phi’s Fear was
+turning to Impatience. When they eventually disappeared around the bend, Phi powered
+up the hill to the residential district.</span></p>
+
+    <p><span>Up
+here, the houses supposedly had a better aspect of the sea, but Phi thought it
+looked the same from every angle: big and blue. Aula’s house was a poky, little
+cottage, crammed into the rocks against its will. The cliff – which acted as its
+rear wall, as well as certain parts of the ceiling – dictated the knobbly shape
+of the rooms. Aula had always loved this house, despite – or perhaps because of
+– its little foibles.</span></p>
+
+    <p><span>Phi
+shut the door gently behind him. He longed to smell the rich tang of Mrs. Jay’s
+“world-famous” tomato soup – a smell he strongly associated with stepping
+through this door. Instead, all he could smell was the rubbish overflowing the
+bins.</span></p>
+
+    <p><span>“Hello
+Mr. Jay, Mrs. Jay,” Phi said as he stepped into the kitchen.
+</span></p>
+
+    <p><span>
+They greeted him with blank stares. The Jays’ boredom-collie, Salty, was still lying patiently at her master’s feet with a leash, waiting to be walked. Aula’s mother was opening a tin of beans. After shearing off the lid, she tipped them at her mouth. When she was done, she dropped the tin on the floor. She shuffled over to sit diagonally opposite her husband and stare expressionlessly into the distance.</span>
+    </p>
+
+    <p><span>“Aula?”
+Phi called into the crooked house. “I’m back! I’ve brought you a present!” He
+stooped into the lounge. Aula wasn’t there. “Aula?” Phi checked her bedroom. He
+checked every room twice before remembering the pantry. Sure enough, there was
+Aula, with her curls tumbling down to yet another indifferent stare.</span></p>
+
+    <p><span>“What
+are you doing in the pantry?” he asked, wiping a stray fleck of fruit from her
+cheek. He took her by the hand and led her into the living room. Aula followed.
+Aula normally hated being led places. Now, she showed no Annoyance at being
+led; no Desire to be elsewhere; no Lethargy to stay still. </span></p>
+
+    <p><span>Phi
+encouraged her onto the sofa. “I’ve got a present for you,” he repeated,
+producing the bottle from his jacket pocket. He tore off the paper and held it
+up for her to see. “Can you read what it says?”</span></p>
+
+    <p><span>Aula’s
+eyes stayed fixed on the middle distance. If she could read the label, she
+certainly didn't feel inclined to do so.</span></p>
+
+    <p><span>“It’s
+Love,” Phi told her, reading the label that Aula herself had written in her
+finest handwriting. “I got it so everything can go back to normal!”</span></p>
+
+    <p><span>Phi
+uncorked the little bottle and held it under Aula’s nose. The vapour seeped
+life back into her. Her eyes sparkled, and her cheeks bloomed. She blinked her
+eyes back into focus, as if returning from some thoughts a long way away. She
+looked at Phi and a beautiful smile spread across her face, infecting Phi with
+a similar affliction. </span></p>
+
+    <p><span>“I
+can feel again!” she exclaimed.</span></p>
+
+    <p><span>“Do
+you love me?” asked Phi.</span></p>
+
+    <p><span>“I
+love you.”</span></p>
+
+    <p><span>Phi’s
+smile disappeared in a flash. This wasn’t Aula. This wasn’t the <i>real</i>
+Aula. Aula would never make it that easy. She’d roll her eyes, or make some sort of sarcastic quip.
+She loved him now because it was the only thing she could do right now.
+It was the only thing she could feel. But for just this
+moment, Phi let himself ignore all that. He blinded himself to the
+meaninglessness of her declaration, and he hugged her tight.</span></p>
+
+    <p><span>“Where
+are my parents?” she asked. “I have to tell them I love them!”</span></p>
+
+    <p><span>“Just
+stay with me a little longer,” said Phi, squeezing her tighter.</span></p>
+
+    <p><span>“But…my
+parents! I love them so much!” Aula cried, breaking free and springing to her
+feet.</span></p>
+
+    <p><span>Phi
+grabbed her hand and spun her round to look him in the eye. “Just…tell me
+how you feel again.”</span></p>
+
+    <p><span>“I
+love you,” she said, just as hollowly as the first time.</span></p>
+
+    <p><span>It
+didn’t feel right. Phi knew it didn’t feel right, but he needed to hear it
+anyway.</span></p>
+
+    <p><span>“My
+parents…” she said, trying to snatch her hand away.</span></p>
+
+    <p><span>“Just
+wait a little longer with me,” asked Phi, “please?”</span></p>
+
+    <p><span>Aula
+was still bursting with Love, but she wouldn’t stop trying to wriggle free. She
+pulled gently at her arm, giggling. “You’re so silly! You’ll have to let me go some
+time! We can’t just walk around like this all day, can we?” She smiled an empty
+smile. Love just wasn’t the same without all the other Feelings. There was
+nothing there to temper it. Nothing to contrast with it. Nothing to tell Phi
+he’d earned it.</span></p>
+
+    <p><span>“One
+more hug?” he asked. </span></p>
+
+    <p><span>“Oh,
+go on,” she said, “but only because I love you.” </span></p>
+
+    <p><span>“I
+love you, too, Aula Jay,” he said back.</span></p>
+
+    <p><span>Her
+arms went limp.</span></p>
+
+    <p><span>“Aula?”
+Phi grabbed her shoulders and looked at her. The sparkle was gone. “Did you
+hear me? I told you I love you.” He shook her, as if he could will the Emotion
+back into her. He grabbed the bottle and waved it under her nose again, but now
+it contained nothing but air. “That can’t have been it!” he yelled, hurling the
+bottle to the floor. Phi hugged Aula as tightly as he could, trying to wring out
+any last drops of Love. “Please don’t leave me. Not again.”</span></p>
+
+    <p><span>He
+held her for a long time. Her shoulder grew damp with his tears. He didn’t know
+what he’d been expecting. Of course waving a bottle under Aula’s nose would
+never fix anything, but it was only now – now that he’d lost her again – that
+the truth sank in. He had to do something, and there was only one thing left he
+could do.<br clear=all>
+</span></p>
+
+{% endblock %}
