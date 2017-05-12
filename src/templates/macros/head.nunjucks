@@ -4,7 +4,4 @@
 
 <link rel="stylesheet" type="text/css" href="{{ cdString }}assets/style/application.css">
 
-<script src="{{ cdString }}assets/javascript/jquery.min.js"></script>
-<script src="{{ cdString }}assets/javascript/mobile-menu.js"></script>
-
 {% endmacro %}

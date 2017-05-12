@@ -39,4 +39,5 @@
     </div>
 </div>
 
+<script src="../assets/javascript/application.min.js"></script>
 {% endblock %}
