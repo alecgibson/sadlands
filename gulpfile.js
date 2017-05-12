@@ -6,6 +6,7 @@ var sass = require('gulp-sass');
 var nunjucksRender = require('gulp-nunjucks-render');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var connect = require('gulp-connect');
 
 gulp.task('clean', function(callback) {
     pump([
@@ -22,7 +23,8 @@ gulp.task('nunjucks', function(callback) {
             nunjucksRender({
                 path: ['src/templates'] // String or Array
             }),
-            gulp.dest('dist')
+            gulp.dest('dist'),
+            connect.reload()
         ],
         callback
     );
@@ -32,7 +34,25 @@ gulp.task('sass', function(callback) {
     pump([
             gulp.src('src/assets/style/application.scss'),
             sass({outputStyle: 'compressed'}).on('error', sass.logError),
-            gulp.dest('dist/assets/style')
+            gulp.dest('dist/assets/style'),
+            connect.reload()
+        ],
+        callback
+    );
+});
+
+gulp.task('javascript', function(callback) {
+    pump([
+            gulp.src([
+                'src/assets/javascript/jquery.min.js',
+                'src/assets/javascript/jquery.scrollme.js',
+                'src/assets/javascript/mobile-menu.js',
+                'src/assets/javascript/smooth-scroll.js'
+            ]),
+            concat('application.min.js'),
+            uglify(),
+            gulp.dest('dist/assets/javascript'),
+            connect.reload()
         ],
         callback
     );
@@ -51,20 +71,11 @@ gulp.task('copy', function(callback) {
     );
 });
 
-gulp.task('javascript', function(callback) {
-    pump([
-            gulp.src([
-                'src/assets/javascript/jquery.min.js',
-                'src/assets/javascript/jquery.scrollme.js',
-                'src/assets/javascript/mobile-menu.js',
-                'src/assets/javascript/smooth-scroll.js'
-            ]),
-            concat('application.min.js'),
-            uglify(),
-            gulp.dest('dist/assets/javascript')
-        ],
-        callback
-    );
+gulp.task('connect', function() {
+   connect.server({
+       root: './dist',
+       livereload: true
+   });
 });
 
 gulp.task('default', function(callback) {
@@ -79,4 +90,13 @@ gulp.task('watch', function() {
     gulp.watch('src/**/*.+(html|nunjucks)', ['nunjucks']);
     gulp.watch('src/assets/**/*.scss', ['sass']);
     gulp.watch('src/assets/**/*.js', ['javascript']);
+});
+
+gulp.task('run', function(callback) {
+   runSequence(
+       'default',
+       'watch',
+       'connect',
+       callback
+   );
 });
