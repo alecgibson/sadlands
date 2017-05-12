@@ -12,3 +12,5 @@ deploy:
   local-dir: dist
   skip_cleanup: true
   on: master
+  acl: public-read
+  detect_encoding: true
