@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var pump = require('pump');
+var runSequence = require('run-sequence');
 var clean = require('gulp-clean');
 var sass = require('gulp-sass');
 var nunjucksRender = require('gulp-nunjucks-render');
@@ -15,7 +16,7 @@ gulp.task('clean', function(callback) {
     );
 });
 
-gulp.task('nunjucks', ['clean'], function(callback) {
+gulp.task('nunjucks', function(callback) {
     pump([
             gulp.src('src/pages/**/*.+(html|nunjucks)'),
             nunjucksRender({
@@ -27,7 +28,7 @@ gulp.task('nunjucks', ['clean'], function(callback) {
     );
 });
 
-gulp.task('sass', ['clean'], function(callback) {
+gulp.task('sass', function(callback) {
     pump([
             gulp.src('src/assets/style/application.scss'),
             sass({outputStyle: 'compressed'}).on('error', sass.logError),
@@ -37,7 +38,7 @@ gulp.task('sass', ['clean'], function(callback) {
     );
 });
 
-gulp.task('copy', ['clean'], function(callback) {
+gulp.task('copy', function(callback) {
     pump([
             gulp.src([
                 'src/assets/**/*',
@@ -50,7 +51,7 @@ gulp.task('copy', ['clean'], function(callback) {
     );
 });
 
-gulp.task('javascript', ['clean'], function(callback) {
+gulp.task('javascript', function(callback) {
     pump([
             gulp.src([
                 'src/assets/javascript/jquery.min.js',
@@ -66,4 +67,16 @@ gulp.task('javascript', ['clean'], function(callback) {
     );
 });
 
-gulp.task('default', ['clean', 'nunjucks', 'copy', 'sass', 'javascript']);
+gulp.task('default', function(callback) {
+    runSequence(
+        'clean',
+        ['nunjucks', 'copy', 'sass', 'javascript'],
+        callback
+    );
+});
+
+gulp.task('watch', function() {
+    gulp.watch('src/**/*.+(html|nunjucks)', ['nunjucks']);
+    gulp.watch('src/assets/**/*.scss', ['sass']);
+    gulp.watch('src/assets/**/*.js', ['javascript']);
+});
