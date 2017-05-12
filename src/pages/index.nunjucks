@@ -3,12 +3,12 @@
 
 {% block head %}
     {{ head.common() }}
-    <link rel="stylesheet" type="text/css" href="assets/style/style.css">
     <script src="assets/javascript/jquery.scrollme.js"></script>
     <script src="assets/javascript/smooth-scroll.js"></script>
 {% endblock %}
 
 {% block body %}
+<div class="main-page">
     <div class="wrapper">
         <div class="content">
             <div class="cover-art scrollme">
@@ -203,5 +203,5 @@
             </div>
         </div>
     </div>
-
+</div>
 {% endblock %}

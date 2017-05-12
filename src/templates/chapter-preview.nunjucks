@@ -4,38 +4,39 @@
 
 {% block head %}
 {{ head.common('../') }}
-<link rel="stylesheet" type="text/css" href="../assets/style/sample.css">
+<title>Sadlands - Chapter {{ chapterNumber }} - Alec Gibson</title>
 {% endblock %}
 
 {% block body %}
-
-<div class="header">
-    <div class="header-background"></div>
-    <div class="header-title"><a href="../" class="header-title-link"></a></div>
-</div>
-
-<div class="header-links">
-    <div class="header-links-container">
-        <a href="../">
-            Home
-        </a>
-        <a href="../#buy-the-book">
-            Buy the book
-        </a>
-        <a href="../#about-the-author" class="desktop-only">
-            About the author
-        </a>
+<div class="chapter-preview">
+    <div class="header">
+        <div class="header-background"></div>
+        <div class="header-title"><a href="../" class="header-title-link"></a></div>
     </div>
-</div>
 
-<div class="content">
+    <div class="header-links">
+        <div class="header-links-container">
+            <a href="../">
+                Home
+            </a>
+            <a href="../#buy-the-book">
+                Buy the book
+            </a>
+            <a href="../#about-the-author" class="desktop-only">
+                About the author
+            </a>
+        </div>
+    </div>
 
-    {{ chapter.navigation(chapterNumber) }}
+    <div class="content">
 
-    {% block chapter %} {% endblock %}
+        {{ chapter.navigation(chapterNumber) }}
 
-    {{ chapter.navigation(chapterNumber) }}
+        {% block chapter %} {% endblock %}
 
+        {{ chapter.navigation(chapterNumber) }}
+
+    </div>
 </div>
 
 {% endblock %}

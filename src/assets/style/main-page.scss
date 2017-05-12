@@ -1,30 +1,21 @@
-html {
-    font-size: 16px;
-}
-
-body {
-    font-family: 'Gentium Basic', serif;
-    background: #3d1d10;
-    margin: 0;
-}
-
-h1 {
+.main-page {
+  h1 {
     font-size: 3rem;
-}
+  }
 
-a, a:visited {
+  a, a:visited {
     color: #983211;
-}
+  }
 
-.hidden {
+  .hidden {
     display: none !important;
-}
+  }
 
-.cover-art {
+  .cover-art {
     padding-top: 50px;
-}
+  }
 
-.fog {
+  .fog {
     position: fixed;
     top: 0;
     left: 0;
@@ -34,42 +25,42 @@ a, a:visited {
     background-size: cover;
     background-repeat: no-repeat;
     z-index: -1;
-}
+  }
 
-.header {
+  .header {
     position: fixed;
     top: 0px;
     left: 0;
     right: 0;
     padding: 7px;
     z-index: 10;
-}
+  }
 
-.header-background {
+  .header-background {
     background: #3d1d10;
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
     left: 0;
-}
+  }
 
-.header-title {
+  .header-title {
     margin: auto;
     width: 200px;
     height: 55px;
     background-image: url("../images/sadlands-title.png");
     background-size: contain;
     background-repeat: no-repeat;
-}
+  }
 
-.header-title a {
+  .header-title a {
     display: block;
     height: 100%;
     width: 100%;
-}
+  }
 
-.bottles {
+  .bottles {
     margin: auto;
     width: 600px;
     height: 713px;
@@ -77,32 +68,32 @@ a, a:visited {
     background-size: contain;
     background-repeat: no-repeat;
     display: block;
-}
+  }
 
-.strapline {
+  .strapline {
     font-style: italic;
     font-size: 3rem;
     color: #f4e8d1;
     text-align: center;
     margin-top: 1em;
-}
+  }
 
-.header-links {
+  .header-links {
     position: fixed;
     left: 0;
     right: 0;
     top: -200px;
     background: #f4e8d1;
     z-index: 9;
-}
+  }
 
-.header-links-container {
+  .header-links-container {
     width: 700px;
     margin: auto;
     display: flex;
-}
+  }
 
-.header-links-container > a {
+  .header-links-container > a {
     text-decoration: none;
     font-size: 1.5rem;
     flex: 1 1 0px;
@@ -110,111 +101,111 @@ a, a:visited {
     text-align: center;
     padding: 0.3em 0;
     font-variant: small-caps;
-}
+  }
 
-.header-links-container > a:hover,
-.header-links-container > a:focus {
+  .header-links-container > a:hover,
+  .header-links-container > a:focus {
     background: #983211;
     color: #f4e8d1;
-}
+  }
 
-.content-section {
+  .content-section {
     background: #fffdf9;
     margin: 4rem 0;
     font-size: 1.3rem;
     line-height: 1.5;
-    -webkit-box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.5);
-    -moz-box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.5);
-    box-shadow: 0px 0px 29px 11px rgba(0,0,0,0.5);
-}
+    -webkit-box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.5);
+  }
 
-.copy {
+  .copy {
     padding: 1rem;
     width: 700px;
     margin: auto;
-}
+  }
 
-.mobile-only {
+  .mobile-only {
     display: none;
-}
+  }
 
-.image-container {
+  .image-container {
     text-align: center;
-}
+  }
 
-.author-image {
+  .author-image {
     width: 200px;
     border-radius: 50%;
-}
+  }
 
-@media (max-width: 710px) {
+  @media (max-width: 710px) {
     .mobile-only {
-        display: initial;
+      display: initial;
     }
 
     .desktop-only {
-        display: none;
+      display: none;
     }
 
     h1 {
-        font-size: 2rem;
+      font-size: 2rem;
     }
 
     .disable-scroll {
-        height: 100%;
-        overflow: hidden;
+      height: 100%;
+      overflow: hidden;
     }
 
     .fog {
-        background-image: url("../images/fog.jpg");
+      background-image: url("../images/fog.jpg");
     }
 
     .cover-art {
-        padding-top: 25px;
+      padding-top: 25px;
     }
 
     .hamburger-wrapper {
-        z-index: 15;
-        position: fixed;
-        top: 0;
-        left: 0;
+      z-index: 15;
+      position: fixed;
+      top: 0;
+      left: 0;
     }
 
     .hamburger-button {
-        height: calc(7px + 13vw);
-        width: calc(7px + 13vw);
-        padding: 3.5vw;
-        background: none;
-        border: none;
+      height: calc(7px + 13vw);
+      width: calc(7px + 13vw);
+      padding: 3.5vw;
+      background: none;
+      border: none;
     }
 
     .hamburger-icon {
-        width: 100%;
-        height: 2px;
-        background: #f4e8d1;
-        margin: 2.5vw 0;
-        display: block;
-        position: relative;
+      width: 100%;
+      height: 2px;
+      background: #f4e8d1;
+      margin: 2.5vw 0;
+      display: block;
+      position: relative;
     }
 
     .hamburger-icon::before {
-        width: 100%;
-        height: 2px;
-        background: #f4e8d1;
-        display: block;
-        content: ' ';
-        position: absolute;
-        top: -2.5vw;
+      width: 100%;
+      height: 2px;
+      background: #f4e8d1;
+      display: block;
+      content: ' ';
+      position: absolute;
+      top: -2.5vw;
     }
 
     .hamburger-icon::after {
-        width: 100%;
-        height: 2px;
-        background: #f4e8d1;
-        display: block;
-        content: ' ';
-        position: absolute;
-        top: 2.5vw;
+      width: 100%;
+      height: 2px;
+      background: #f4e8d1;
+      display: block;
+      content: ' ';
+      position: absolute;
+      top: 2.5vw;
     }
 
     .close {
@@ -238,44 +229,45 @@ a, a:visited {
     }
 
     .header-title {
-        width: 40%;
-        height: 11vw;
+      width: 40%;
+      height: 11vw;
     }
 
     .header-links {
-        position: fixed;
-        top: calc(7px + 12vw);
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 15;
+      position: fixed;
+      top: calc(7px + 12vw);
+      bottom: 0;
+      left: 0;
+      right: 0;
+      z-index: 15;
     }
 
     .header-links-container {
-        flex-direction: column;
-        width: 100%;
-        margin-top: 2rem;
+      flex-direction: column;
+      width: 100%;
+      margin-top: 2rem;
     }
 
     .header-links-container > a {
-        font-size: 2rem;
+      font-size: 2rem;
     }
 
     .bottles {
-        width: 90vw;
-        height: 107vw;
-        background-image: url("../images/bottles-and-smoke.png");
+      width: 90vw;
+      height: 107vw;
+      background-image: url("../images/bottles-and-smoke.png");
     }
 
     .strapline {
-        font-size: 1.5rem;
+      font-size: 1.5rem;
     }
 
     .content-section {
-        margin: 2rem 0;
+      margin: 2rem 0;
     }
 
     .copy {
-        width: auto;
+      width: auto;
     }
+  }
 }

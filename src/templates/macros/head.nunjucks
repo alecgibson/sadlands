@@ -2,6 +2,8 @@
 
 <link rel="shortcut icon" type="image/x-icon" href="{{ cdString }}assets/favicon.png" />
 
+<link rel="stylesheet" type="text/css" href="{{ cdString }}assets/style/application.css">
+
 <script src="{{ cdString }}assets/javascript/jquery.min.js"></script>
 <script src="{{ cdString }}assets/javascript/mobile-menu.js"></script>
 
