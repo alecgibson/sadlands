@@ -1,0 +1,27 @@
+{% macro show(review) %}
+<div class="review">
+    <div class="quote-marks quote-marks-before">
+        <div class="open-quote quote-mark">“</div>
+        <div class="close-quote quote-mark">”</div>
+    </div>
+    <div class="quote">
+        <div class="quote-text">
+            {{ review.quote }}
+        </div>
+        <div class="review-metadata">
+            <div class="reviewer">
+                &mdash; {{ review.source }}
+            </div>
+            <div class="stars">
+                {% for star in range(0, review.stars) %}
+                &#9733;
+                {% endfor %}
+            </div>
+        </div>
+    </div>
+    <div class="quote-marks quote-marks-after">
+        <div class="open-quote quote-mark">“</div>
+        <div class="close-quote quote-mark">”</div>
+    </div>
+</div>
+{% endmacro %}

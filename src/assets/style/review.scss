@@ -1,0 +1,88 @@
+.review {
+  font-family: Georgia, "Times New Roman", serif;
+  padding: 0 3em;
+  display: flex;
+  font-style: italic;
+  margin: 2em 0;
+
+  &:nth-child(even) {
+    .quote-marks-after {
+      display: none;
+    }
+  }
+
+  &:nth-child(odd) {
+    .quote-marks-before {
+      display: none;
+    }
+  }
+
+  .quote-marks {
+    flex: 0 0 auto;
+    height: 3em;
+    width: 3em;
+    border-radius: 50%;
+    background: #983211;
+    text-align: center;
+    margin-top: .2em;
+
+    &.quote-marks-after {
+      margin-left: 2em;
+    }
+
+    &.quote-marks-before {
+      margin-right: 2em;
+    }
+
+    .quote-mark {
+      display: inline-block;
+      font-size: 3em;
+      position: relative;
+      color: white;
+
+      &.open-quote {
+        top: -.1em;
+        left: 0em;
+      }
+
+      &.close-quote {
+        top: .2em;
+        left: -.15em;
+      }
+    }
+  }
+
+  .review-metadata {
+    font-style: normal;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: .5em;
+
+    .reviewer {
+      padding: 0 1em;
+    }
+  }
+
+  @media (max-width: 710px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0;
+
+    .quote-marks {
+      margin-bottom: 1em;
+
+      &.quote-marks-before {
+        display: block;
+      }
+
+      &.quote-marks-after {
+        display: none;
+      }
+    }
+
+    .review-metadata {
+      display: block;
+      text-align: right;
+    }
+  }
+}

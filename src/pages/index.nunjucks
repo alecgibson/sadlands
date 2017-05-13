@@ -1,4 +1,5 @@
 {% extends "base.nunjucks" %}
+{% import "macros/review.nunjucks" as review %}
 
 {% block body %}
 <div class="main-page">
@@ -120,20 +121,26 @@
                         Phi is a purveyor of bottled emotions.
                     </p>
                     <p>
-                        When the factory providing the world’s emotions is sabotaged, Phi’s own world goes up in smoke. He’s
+                        When the factory providing the world’s emotions is sabotaged, Phi’s own world goes up in smoke.
+                        He’s
                         one
-                        of the few people left who can feel anything at all, and the relentless, Hate-fuelled Gaspers are
+                        of the few people left who can feel anything at all, and the relentless, Hate-fuelled Gaspers
+                        are
                         closing in.
                     </p>
                     <p>
-                        Phi embarks on a quest to restart the factory. It’s his only chance for the girl he loves to love
+                        Phi embarks on a quest to restart the factory. It’s his only chance for the girl he loves to
+                        love
                         again.
-                        The journey will take him deep into the heart of the Sadlands, where the very act of breathing can
+                        The journey will take him deep into the heart of the Sadlands, where the very act of breathing
+                        can
                         paralyse you with your own Fear.
                     </p>
                     <p>
-                        In a place where beasts can use your own Courage to lure you into deadly traps, you can’t even trust
-                        your own feelings. Yet, Phi must place his trust in three unlikely companions: a valiant orphan who
+                        In a place where beasts can use your own Courage to lure you into deadly traps, you can’t even
+                        trust
+                        your own feelings. Yet, Phi must place his trust in three unlikely companions: a valiant orphan
+                        who
                         throws herself headfirst into danger; a rival who Phi has never seen eye-to-eye with; and a
                         mysterious
                         traveller struggling to keep a secret…
@@ -147,30 +154,35 @@
                         Buy the book
                     </h1>
                     <p>
-                        Sadlands is available for purchase from Amazon in Europe and the US on paperback and ebook formats.
+                        Sadlands is available to buy worldwide on Amazon in eBook format. Paperback is available in
+                        the UK, US and Japan.
                     </p>
-                    <h2>UK</h2>
-                    <p>
-                        <a href="https://www.amazon.co.uk/Sadlands-Alec-Gibson/dp/1520720424">
-                            Paperback
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.amazon.co.uk/Sadlands-Alec-Gibson/dp/B06XFG7GKM">
-                            Kindle
-                        </a>
-                    </p>
-                    <h2>US</h2>
-                    <p>
-                        <a href="https://www.amazon.com/Sadlands-Alec-Gibson/dp/1520720424">
-                            Paperback
-                        </a>
-                    </p>
-                    <p>
-                        <a href="https://www.amazon.com/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM">
-                            Kindle
-                        </a>
-                    </p>
+
+                    <div class="shop-links">
+                        <div>
+                            <a href="/shop/?ebook">Buy the eBook</a>
+                        </div>
+                        <div>
+                            <a href="/shop/">Buy the Paperback</a>
+                        </div>
+                    </div>
+
+                    {% set reviews = [
+                    {
+                    quote: "Sadlands is a unique idea, with intriguing characters and clever creatures",
+                    source: "Ciaran, amazon.co.uk",
+                    stars: 5
+                    },
+                    {
+                    quote: "Good characters, a believable villain and a gripping roll through all of your emotions",
+                    source: "RachelC, amazon.co.uk",
+                    stars: 5
+                    }
+                    ] %}
+
+                    {% for customerReview in reviews %}
+                    {{ review.show(customerReview) }}
+                    {% endfor %}
                 </div>
             </div>
 
@@ -183,13 +195,16 @@
                         <img class="author-image" src="assets/images/alec-gibson.jpg">
                     </div>
                     <p>
-                        When he’s not describing himself in third person, Alec enjoys describing imaginary people in third
+                        When he’s not describing himself in third person, Alec enjoys describing imaginary people in
+                        third
                         person instead. He loves dreaming up unique worlds, chatty characters, and has a soft spot for a
-                        good play on words (and occasionally flicking through the Arts & Entertainment section for some good
+                        good play on words (and occasionally flicking through the Arts & Entertainment section for some
+                        good
                         words on plays).
                     </p>
                     <p>
-                        By day, Alec is a software developer (giving him an unusual penchant for parentheses), by night he
+                        By day, Alec is a software developer (giving him an unusual penchant for parentheses), by night
+                        he
                         sleeps, and by Jove is he excited to start work on the next book!
                     </p>
                 </div>

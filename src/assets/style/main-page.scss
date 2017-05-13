@@ -5,6 +5,11 @@
 
   a, a:visited {
     color: #983211;
+    text-decoration: none;
+
+    &:focus, &:hover {
+      text-decoration: underline;
+    }
   }
 
   .hidden {
@@ -135,6 +140,27 @@
   .author-image {
     width: 200px;
     border-radius: 50%;
+  }
+
+  .shop-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 0 4em 0;
+
+    div {
+      flex: 1 1 auto;
+      text-align: center;
+      margin: .5em 0;
+    }
+
+    a {
+      font-size: 1.5em;
+      margin-right: 2em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
   }
 
   @media (max-width: 710px) {
