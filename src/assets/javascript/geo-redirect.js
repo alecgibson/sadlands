@@ -36,7 +36,13 @@
         showSpinner();
 
         httpGet('http://freegeoip.net/json/', function (response) {
-            redirect(response.country_code);
+            var countryCode;
+            try {
+                countryCode = JSON.parse(response).country_code;
+            } catch (e) {
+            }
+
+            redirect(countryCode);
         });
     }
 
