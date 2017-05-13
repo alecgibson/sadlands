@@ -49,6 +49,21 @@
         width: 600px;
         margin: auto;
         display: flex;
+
+        & > a {
+            text-decoration: none;
+            font-size: 1.5rem;
+            flex: 1 1 0px;
+            color: #983211;
+            text-align: center;
+            padding: 0.3em 0;
+            font-variant: small-caps;
+
+            &:hover, &:focus {
+                background: #983211;
+                color: #f4e8d1;
+            }
+        }
     }
 
     @media (max-width: 600px) {
@@ -59,22 +74,6 @@
         .header-links-container {
             width: 95vw;
         }
-    }
-
-    .header-links-container > a {
-        text-decoration: none;
-        font-size: 1.5rem;
-        flex: 1 1 0px;
-        color: #983211;
-        text-align: center;
-        padding: 0.3em 0;
-        font-variant: small-caps;
-    }
-
-    .header-links-container > a:hover,
-    .header-links-container > a:focus {
-        background: #983211;
-        color: #f4e8d1;
     }
 
     .content {
@@ -101,14 +100,14 @@
         margin: 0;
         text-indent: 0;
         font-size: 1em;
-    }
 
-    p + p {
-        text-indent: 1.5em;
-    }
+        & + p {
+            text-indent: 1.5em;
+        }
 
-    p + p.no-indent {
-        text-indent: 0;
+        & + p.no-indent {
+            text-indent: 0;
+        }
     }
 
     h1 {
@@ -116,15 +115,15 @@
         font-size: 1.5em;
         margin-top: 0;
         margin-bottom: 0.2em;
-    }
 
-    h1.acknowledgements {
-        margin-bottom: 2em;
-    }
+        &.acknowledgements {
+            margin-bottom: 2em;
+        }
 
-    h1.book-title {
-        margin-top: 4em;
-        margin-bottom: 0.2em;
+        &.book-title {
+            margin-top: 4em;
+            margin-bottom: 0.2em;
+        }
     }
 
     .chapter-time {

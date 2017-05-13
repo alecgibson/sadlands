@@ -1,9 +1,7 @@
 {% extends "base.nunjucks" %}
-{% import "macros/head.nunjucks" as head %}
 {% import "macros/chapter.nunjucks" as chapter %}
 
 {% block head %}
-{{ head.common('../') }}
 <title>Sadlands - Chapter {{ chapterNumber }} - Alec Gibson</title>
 {% endblock %}
 
@@ -11,18 +9,18 @@
 <div class="chapter-preview">
     <div class="header">
         <div class="header-background"></div>
-        <div class="header-title"><a href="../" class="header-title-link"></a></div>
+        <div class="header-title"><a href="/" class="header-title-link"></a></div>
     </div>
 
     <div class="header-links">
         <div class="header-links-container">
-            <a href="../">
+            <a href="/">
                 Home
             </a>
-            <a href="../#buy-the-book">
+            <a href="/#buy-the-book">
                 Buy the book
             </a>
-            <a href="../#about-the-author" class="desktop-only">
+            <a href="/#about-the-author" class="desktop-only">
                 About the author
             </a>
         </div>
@@ -38,6 +36,4 @@
 
     </div>
 </div>
-
-<script src="../assets/javascript/application.min.js"></script>
 {% endblock %}

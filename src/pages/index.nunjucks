@@ -1,9 +1,4 @@
 {% extends "base.nunjucks" %}
-{% import "macros/head.nunjucks" as head %}
-
-{% block head %}
-    {{ head.common() }}
-{% endblock %}
 
 {% block body %}
 <div class="main-page">
@@ -202,6 +197,4 @@
         </div>
     </div>
 </div>
-
-<script src="assets/javascript/application.min.js"></script>
 {% endblock %}
