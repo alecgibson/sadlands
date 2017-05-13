@@ -1,6 +1,7 @@
-@import "main-page";
-@import "chapter-preview";
-@import "review";
+@import "../../templates/base";
+@import "../../templates/chapter-preview";
+@import "../../templates/macros/navigation";
+@import "../../templates/macros/review";
 
 html {
   font-size: 16px;
@@ -9,4 +10,27 @@ html {
 body {
   font-family: 'Gentium Basic', serif;
   margin: 0;
+}
+
+.mobile-only {
+  display: none;
+}
+
+.hidden {
+  display: none !important;
+}
+
+@media (max-width: 710px) {
+  .mobile-only {
+    display: initial;
+  }
+
+  .desktop-only {
+    display: none;
+  }
+
+  .disable-scroll {
+    height: 100%;
+    overflow: hidden;
+  }
 }

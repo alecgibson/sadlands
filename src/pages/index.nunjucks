@@ -1,5 +1,6 @@
 {% extends "base.nunjucks" %}
 {% import "macros/review.nunjucks" as review %}
+{% import "macros/navigation.nunjucks" as navigation %}
 
 {% block body %}
 <div class="main-page">
@@ -12,97 +13,9 @@
                      data-to="1"
                      data-translatey="-200"
                      data-easing="linear"></div>
-                <div class="header animateme desktop-only"
-                     data-when="span"
-                     data-from="0.3"
-                     data-to="0"
-                     data-easing="linear"
-                     data-scaley="2.5"
-                     data-translatey="252">
-                    <div class="header-background animateme"
-                         data-when="span"
-                         data-from="0.3"
-                         data-to="0"
-                         data-easing="easeinout"
-                         data-opacity="0"></div>
-                    <div class="header-title animateme"
-                         data-when="span"
-                         data-from="0.3"
-                         data-to="0"
-                         data-easing="linear"
-                         data-scalex="2.5">
-                        <a href="#about-the-book"></a>
-                    </div>
-                </div>
-                <div class="header animateme mobile-only"
-                     data-when="span"
-                     data-from="0.3"
-                     data-to="0"
-                     data-easing="linear"
-                     data-scaley="2.5"
-                     data-translatey="40"
-                     data-translatevw="true">
-                    <div class="header-background animateme"
-                         data-when="span"
-                         data-from="0.3"
-                         data-to="0"
-                         data-easing="easeinout"
-                         data-opacity="0"></div>
-                    <div class="header-title animateme"
-                         data-when="span"
-                         data-from="0.3"
-                         data-to="0"
-                         data-easing="linear"
-                         data-scalex="2.5">
-                        <a href="#about-the-book"></a>
-                    </div>
-                </div>
-                <div class="hamburger-wrapper animateme mobile-only"
-                     data-when="span"
-                     data-from="0.7"
-                     data-to="0.3"
-                     data-easing="linear"
-                     data-translatex="-100">
-                    <button class="hamburger-button" type="button">
-                        <span class="hamburger-icon"></span>
-                    </button>
-                </div>
-                <div class="header-links animateme desktop-only"
-                     data-when="span"
-                     data-from="0.3"
-                     data-to="0.8"
-                     data-translatey="268">
-                    <div class="header-links-container">
-                        <a href="#about-the-book">
-                            About the book
-                        </a>
-                        <a href="#buy-the-book">
-                            Buy the book
-                        </a>
-                        <a href="chapter1">
-                            Read a sample
-                        </a>
-                        <a href="#about-the-author">
-                            About the author
-                        </a>
-                    </div>
-                </div>
-                <div class="header-links mobile-only hidden">
-                    <div class="header-links-container">
-                        <a href="#about-the-book">
-                            About the book
-                        </a>
-                        <a href="#buy-the-book">
-                            Buy the book
-                        </a>
-                        <a href="chapter1">
-                            Read a sample
-                        </a>
-                        <a href="#about-the-author">
-                            About the author
-                        </a>
-                    </div>
-                </div>
+
+                {{ navigation.header(true) }}
+
                 <a href="#about-the-book" class="bottles">
                 </a>
                 <div class="strapline">

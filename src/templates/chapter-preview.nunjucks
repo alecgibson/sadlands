@@ -1,5 +1,6 @@
 {% extends "base.nunjucks" %}
 {% import "macros/chapter.nunjucks" as chapter %}
+{% import "macros/navigation.nunjucks" as navigation %}
 
 {% block head %}
 <title>Sadlands - Chapter {{ chapterNumber }} - Alec Gibson</title>
@@ -7,24 +8,7 @@
 
 {% block body %}
 <div class="chapter-preview">
-    <div class="header">
-        <div class="header-background"></div>
-        <div class="header-title"><a href="/" class="header-title-link"></a></div>
-    </div>
-
-    <div class="header-links">
-        <div class="header-links-container">
-            <a href="/">
-                Home
-            </a>
-            <a href="/#buy-the-book">
-                Buy the book
-            </a>
-            <a href="/#about-the-author" class="desktop-only">
-                About the author
-            </a>
-        </div>
-    </div>
+    {{ navigation.header() }}
 
     <div class="content">
 

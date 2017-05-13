@@ -1,0 +1,126 @@
+.main-page {
+  h1 {
+    font-size: 3rem;
+  }
+
+  a, a:visited {
+    color: #983211;
+    text-decoration: none;
+
+    &:focus, &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  .cover-art {
+    padding-top: 50px;
+  }
+
+  .fog {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 2000px;
+    background-image: url("../images/fog.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+  }
+
+  .bottles {
+    margin: auto;
+    width: 600px;
+    height: 713px;
+    background-image: url("../images/bottles-and-smoke.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: block;
+  }
+
+  .strapline {
+    font-style: italic;
+    font-size: 3rem;
+    color: #f4e8d1;
+    text-align: center;
+    margin-top: 1em;
+  }
+
+  .content-section {
+    background: #fffdf9;
+    margin: 4rem 0;
+    font-size: 1.3rem;
+    line-height: 1.5;
+    -webkit-box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.5);
+    box-shadow: 0px 0px 29px 11px rgba(0, 0, 0, 0.5);
+  }
+
+  .copy {
+    padding: 1rem;
+    width: 700px;
+    margin: auto;
+  }
+
+  .image-container {
+    text-align: center;
+  }
+
+  .author-image {
+    width: 200px;
+    border-radius: 50%;
+  }
+
+  .shop-links {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3em 0 4em 0;
+
+    div {
+      flex: 1 1 auto;
+      text-align: center;
+      margin: .5em 0;
+    }
+
+    a {
+      font-size: 1.5em;
+      margin-right: 2em;
+
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  @media (max-width: 710px) {
+    h1 {
+      font-size: 2rem;
+    }
+
+    .fog {
+      background-image: url("../images/fog.jpg");
+    }
+
+    .cover-art {
+      padding-top: 25px;
+    }
+
+    .bottles {
+      width: 90vw;
+      height: 107vw;
+      background-image: url("../images/bottles-and-smoke.png");
+    }
+
+    .strapline {
+      font-size: 1.5rem;
+    }
+
+    .content-section {
+      margin: 2rem 0;
+    }
+
+    .copy {
+      width: auto;
+    }
+  }
+}

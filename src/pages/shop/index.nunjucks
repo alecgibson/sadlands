@@ -1,7 +1,7 @@
 <html>
 <head>
     <title>Sadlands - Shop - Alec Gibson</title>
-    <link rel="stylesheet" type="text/css" href="/assets/style/redirect.css">
+    <link rel="stylesheet" type="text/css" href="/assets/style/shop.css">
 </head>
 <body>
 <div class="redirect">
@@ -53,6 +53,6 @@
     </div>
     <div id="loading-spinner"></div>
 </div>
-<script src="/assets/javascript/geo-redirect.js"></script>
+<script src="/assets/javascript/shop.js"></script>
 </body>
 </html>

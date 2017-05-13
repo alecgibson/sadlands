@@ -60,7 +60,7 @@ gulp.task('javascript', function(callback) {
 
 gulp.task('redirect-sass', function(callback) {
     pump([
-            gulp.src('src/assets/style/redirect.scss'),
+            gulp.src('src/pages/shop/shop.scss'),
             sass({outputStyle: 'compressed'}).on('error', sass.logError),
             gulp.dest('dist/assets/style'),
             connect.reload()
@@ -71,7 +71,7 @@ gulp.task('redirect-sass', function(callback) {
 
 gulp.task('redirect-javascript', function(callback) {
     pump([
-            gulp.src('src/assets/javascript/geo-redirect.js'),
+            gulp.src('src/pages/shop/shop.js'),
             uglify(),
             gulp.dest('dist/assets/javascript'),
             connect.reload()
@@ -110,8 +110,8 @@ gulp.task('default', function(callback) {
 
 gulp.task('watch', function() {
     gulp.watch('src/**/*.+(html|nunjucks)', ['nunjucks']);
-    gulp.watch('src/assets/**/*.scss', ['sass', 'redirect-sass']);
-    gulp.watch('src/assets/**/*.js', ['javascript', 'redirect-javascript']);
+    gulp.watch('src/**/*.scss', ['sass', 'redirect-sass']);
+    gulp.watch('src/**/*.js', ['javascript', 'redirect-javascript']);
 });
 
 gulp.task('run', function(callback) {
