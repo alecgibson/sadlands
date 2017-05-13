@@ -2,8 +2,14 @@
 
 (function() {
     var amazonMappings = {
-        'GB': 'https://www.amazon.co.uk/Sadlands-Alec-Gibson/dp/1520720424',
-        'US': 'https://www.amazon.com/Sadlands-Alec-Gibson/dp/1520720424',
+        'GB': {
+            paperback: 'https://www.amazon.co.uk/Sadlands-Alec-Gibson/dp/1520720424',
+            eBook: 'https://www.amazon.co.uk/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM'
+        },
+        'US': {
+            paperback: 'https://www.amazon.com/Sadlands-Alec-Gibson/dp/1520720424',
+            eBook: 'https://www.amazon.com/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM'
+        },
         'AU': 'https://www.amazon.com.au/dp/B06XFG7GKM',
         'CA': 'https://www.amazon.ca/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM',
         'IN': 'https://www.amazon.in/dp/B06XFG7GKM',
@@ -12,7 +18,10 @@
         'ES': 'https://www.amazon.es/dp/B06XFG7GKM',
         'IT': 'https://www.amazon.it/Sadlands-Alec-Gibson/dp/1520720424',
         'NL': 'https://www.amazon.nl/dp/B06XFG7GKM',
-        'JP': 'https://www.amazon.co.jp/dp/B06XFG7GKM',
+        'JP': {
+            paperback: 'https://www.amazon.co.jp/Sadlands-Alec-Gibson/dp/1520720424',
+            eBook: 'https://www.amazon.co.jp/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM'
+        },
         'BR': 'https://www.amazon.com.br/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM',
         'MX': 'https://www.amazon.com.mx/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM'
     };
@@ -62,6 +71,19 @@
     }
 
     function redirect(countryCode) {
-        window.location = amazonMappings[countryCode] || amazonMappings['GB'];
+        var amazonMapping = amazonMappings[countryCode] || amazonMappings['GB'];
+
+        var isEBook = window.location.search === '?ebook';
+
+        var url;
+        if (typeof amazonMapping === 'string') {
+            url = amazonMapping;
+        } else if (isEBook) {
+            url = amazonMapping.eBook;
+        } else {
+            url = amazonMapping.paperback;
+        }
+
+        window.location = url;
     }
 })();
