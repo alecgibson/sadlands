@@ -1,0 +1,58 @@
+<html>
+<head>
+    <title>Sadlands - Shop - Alec Gibson</title>
+    <link rel="stylesheet" type="text/css" href="/assets/style/redirect.css">
+</head>
+<body>
+<div class="redirect">
+    <div id="fallback">
+        <p>
+            Sadlands is available from the following Amazon stores:
+        </p>
+        <ul>
+            <li>
+                <a href="https://www.amazon.co.uk/Sadlands-Alec-Gibson/dp/1520720424">United Kingdom</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.com/Sadlands-Alec-Gibson/dp/1520720424">United States</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.com.au/dp/B06XFG7GKM">Australia</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.ca/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM">Canada</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.co.jp/dp/B06XFG7GKM">Japan</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.in/dp/B06XFG7GKM">India</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.de/dp/B06XFG7GKM">Germany</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.fr/dp/B06XFG7GKM">France</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.es/dp/B06XFG7GKM">Spain</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.it/Sadlands-Alec-Gibson/dp/1520720424">Italy</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.nl/dp/B06XFG7GKM">Netherlands</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.com.br/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM">Brazil</a>
+            </li>
+            <li>
+                <a href="https://www.amazon.com.mx/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM">Mexico</a>
+            </li>
+        </ul>
+    </div>
+    <div id="loading-spinner"></div>
+</div>
+<script src="/assets/javascript/geo-redirect.js"></script>
+</body>
+</html>

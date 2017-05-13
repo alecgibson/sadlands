@@ -58,6 +58,28 @@ gulp.task('javascript', function(callback) {
     );
 });
 
+gulp.task('redirect-sass', function(callback) {
+    pump([
+            gulp.src('src/assets/style/redirect.scss'),
+            sass({outputStyle: 'compressed'}).on('error', sass.logError),
+            gulp.dest('dist/assets/style'),
+            connect.reload()
+        ],
+        callback
+    );
+});
+
+gulp.task('redirect-javascript', function(callback) {
+    pump([
+            gulp.src('src/assets/javascript/geo-redirect.js'),
+            uglify(),
+            gulp.dest('dist/assets/javascript'),
+            connect.reload()
+        ],
+        callback
+    );
+});
+
 gulp.task('copy', function(callback) {
     pump([
             gulp.src([
@@ -81,15 +103,15 @@ gulp.task('connect', function() {
 gulp.task('default', function(callback) {
     runSequence(
         'clean',
-        ['nunjucks', 'copy', 'sass', 'javascript'],
+        ['nunjucks', 'copy', 'sass', 'javascript', 'redirect-sass', 'redirect-javascript'],
         callback
     );
 });
 
 gulp.task('watch', function() {
     gulp.watch('src/**/*.+(html|nunjucks)', ['nunjucks']);
-    gulp.watch('src/assets/**/*.scss', ['sass']);
-    gulp.watch('src/assets/**/*.js', ['javascript']);
+    gulp.watch('src/assets/**/*.scss', ['sass', 'redirect-sass']);
+    gulp.watch('src/assets/**/*.js', ['javascript', 'redirect-javascript']);
 });
 
 gulp.task('run', function(callback) {
