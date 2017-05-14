@@ -53,6 +53,6 @@
     </div>
     <div id="loading-spinner"></div>
 </div>
-<script src="/assets/javascript/shop.js"></script>
+<script src="/assets/javascript/shop.min.js"></script>
 </body>
 </html>

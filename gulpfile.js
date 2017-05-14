@@ -47,7 +47,8 @@ gulp.task('javascript', function(callback) {
                 'src/assets/javascript/jquery.min.js',
                 'src/assets/javascript/jquery.scrollme.js',
                 'src/assets/javascript/mobile-menu.js',
-                'src/assets/javascript/smooth-scroll.js'
+                'src/assets/javascript/smooth-scroll.js',
+                'src/assets/javascript/tracking.js'
             ]),
             concat('application.min.js'),
             uglify(),
@@ -71,7 +72,11 @@ gulp.task('redirect-sass', function(callback) {
 
 gulp.task('redirect-javascript', function(callback) {
     pump([
-            gulp.src('src/pages/shop/shop.js'),
+            gulp.src([
+                'src/pages/shop/shop.js',
+                'src/assets/javascript/tracking.js'
+            ]),
+            concat('shop.min.js'),
             uglify(),
             gulp.dest('dist/assets/javascript'),
             connect.reload()

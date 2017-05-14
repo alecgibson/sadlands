@@ -90,6 +90,8 @@
             url = amazonMapping.paperback;
         }
 
+        analytics.trackEvent('shopRedirect', url, countryCode);
+
         window.location = url;
     }
 })();
