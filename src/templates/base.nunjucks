@@ -3,6 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    {# Verification for sadlands.co.uk #}
+    <meta name="google-site-verification" content="p5QXwBc5YqlAznim97lObWkDLiHU-PRkKjClGWtPzas" />
+    {# Verification for alecgibson.co.uk #}
+    <meta name="google-site-verification" content="u74Jtnue_Bei90p0D8xn8AKTLFCg0PNYyf3AKPlPP0w" />
 
     <link href="https://fonts.googleapis.com/css?family=Gentium+Basic:400,400i,700" rel="stylesheet">
     <link rel="shortcut icon" type="image/x-icon" href="/assets/favicon.png" />
