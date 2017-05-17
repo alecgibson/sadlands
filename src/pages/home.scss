@@ -71,23 +71,28 @@
     border-radius: 50%;
   }
 
-  .shop-links {
+  .shop-section {
     display: flex;
     flex-wrap: wrap;
-    margin: 3em 0 4em 0;
+    justify-content: center;
 
-    div {
-      flex: 1 1 auto;
-      text-align: center;
-      margin: .5em 0;
+    .sadlands-cover-image {
+      width: 200px;
+      margin: 1em 2em;
     }
 
-    a {
-      font-size: 1.5em;
-      margin-right: 2em;
+    .shop-links {
+      display: flex;
+      align-items: center;
 
-      &:last-child {
-        margin-right: 0;
+      ul {
+        list-style: none;
+        font-size: 1.25em;
+        padding: 0;
+
+        li {
+          margin-bottom: 1em;
+        }
       }
     }
   }

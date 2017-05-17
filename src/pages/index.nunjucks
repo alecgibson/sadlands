@@ -19,7 +19,7 @@
                 <a href="#about-the-book" class="bottles">
                 </a>
                 <div class="strapline">
-                    You can buy Happiness
+                    You can put a price on Happiness
                 </div>
             </div>
             <div class="content-section" id="about-the-book">
@@ -67,22 +67,28 @@
                         Buy the book
                     </h1>
                     <p>
-                        Sadlands is <strong>free</strong> on Kindle Unlimited. It's also available to buy worldwide on
-                        Amazon Kindle. Paperback is available in the UK, US and Japan.
+                        Sadlands is available worldwide on Amazon Kindle. Paperback is available in the UK, US and
+                        Japan.
                     </p>
 
-                    <div class="shop-links">
-                        <div>
-                            <a href="/shop/?ebook">Get the eBook</a>
+                    <div class="shop-section">
+                        <div class="book-cover">
+                            <a href="/shop">
+                                <img src="/assets/images/sadlands-cover.jpg" class="sadlands-cover-image">
+                            </a>
                         </div>
-                        <div>
-                            <a href="/shop/?paperback">Get the Paperback</a>
-                        </div>
-                    </div>
-
-                    <div class="shop-links">
-                        <div>
-                            <a href="/chapter1">Read a sample</a>
+                        <div class="shop-links">
+                            <ul>
+                                <li>
+                                    <a href="/shop/?ebook">Get the eBook</a>
+                                </li>
+                                <li>
+                                    <a href="/shop/?paperback">Get the Paperback</a>
+                                </li>
+                                <li>
+                                    <a href="/chapter1">Read a sample</a>
+                                </li>
+                            </ul>
                         </div>
                     </div>
 
