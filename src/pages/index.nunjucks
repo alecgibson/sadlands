@@ -76,7 +76,7 @@
                             <a href="/shop/?ebook">Buy the eBook</a>
                         </div>
                         <div>
-                            <a href="/shop/">Buy the Paperback</a>
+                            <a href="/shop/?paperback">Buy the Paperback</a>
                         </div>
                     </div>
 

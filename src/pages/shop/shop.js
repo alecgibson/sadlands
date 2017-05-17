@@ -4,11 +4,11 @@
     var amazonMappings = {
         'GB': {
             paperback: 'https://www.amazon.co.uk/Sadlands-Alec-Gibson/dp/1520720424',
-            eBook: 'https://www.amazon.co.uk/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM'
+            ebook: 'https://www.amazon.co.uk/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM'
         },
         'US': {
             paperback: 'https://www.amazon.com/Sadlands-Alec-Gibson/dp/1520720424',
-            eBook: 'https://www.amazon.com/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM'
+            ebook: 'https://www.amazon.com/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM'
         },
         'AU': 'https://www.amazon.com.au/dp/B06XFG7GKM',
         'CA': 'https://www.amazon.ca/Sadlands-Alec-Gibson-ebook/dp/B06XFG7GKM',
@@ -20,7 +20,7 @@
         'NL': 'https://www.amazon.nl/dp/B06XFG7GKM',
         'JP': {
             paperback: 'https://www.amazon.co.jp/Sadlands-Alec-Gibson/dp/1520720424',
-            eBook: 'https://www.amazon.co.jp/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM'
+            ebook: 'https://www.amazon.co.jp/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM'
         },
         'BR': 'https://www.amazon.com.br/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM',
         'MX': 'https://www.amazon.com.mx/Sadlands-English-Alec-Gibson-ebook/dp/B06XFG7GKM'
@@ -58,37 +58,32 @@
             var response = request.currentTarget.response || request.target.responseText;
             success(response);
         };
-        request.onerror = onError;
+        request.onerror = success;
         request.send();
         return request;
-    }
-
-    function onError() {
-        showFallback();
     }
 
     function hideFallback() {
         fallback.className = 'hidden';
     }
 
-    function showFallback() {
-        fallback.className = '';
-        loadingSpinner.className = '';
-    }
-
     function redirect(countryCode) {
-        var amazonMapping = amazonMappings[countryCode] || amazonMappings['GB'];
+        var amazonMapping = amazonMappings[countryCode] || amazonMappings.GB;
 
-        var isEBook = window.location.search === '?ebook';
+        var requestedFormat = window.location.search.substring(1);
 
         var url;
-        if (typeof amazonMapping === 'string') {
+        if (requestedFormat === 'paperback') {
+            url = amazonMapping.paperback || amazonMappings.US.paperback;
+        } else if (typeof amazonMapping === 'string') {
             url = amazonMapping;
-        } else if (isEBook) {
-            url = amazonMapping.eBook;
+        } else if (requestedFormat === 'ebook') {
+            url = amazonMapping.ebook;
         } else {
             url = amazonMapping.paperback;
         }
+
+        url = url || amazonMappings.GB.paperback;
 
         analytics.trackEvent('shopRedirect', url, countryCode);
 
