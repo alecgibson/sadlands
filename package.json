@@ -1,15 +1,17 @@
 {
   "name": "sadlands",
   "version": "0.1.0",
+  "scripts": {
+    "start": "node ./node_modules/gulp/bin/gulp run"
+  },
   "devDependencies": {
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.2",
     "gulp-clean": "^0.3.2",
     "gulp-concat": "^2.6.1",
-    "gulp-connect": "^5.0.0",
-    "gulp-nunjucks-render": "^2.2.1",
-    "gulp-sass": "^3.1.0",
+    "gulp-connect": "^5.7.0",
+    "gulp-nunjucks-render": "^2.2.3",
+    "gulp-sass": "^3.2.1",
     "gulp-uglify": "^2.1.2",
-    "pump": "^1.0.2",
-    "run-sequence": "^1.2.2"
+    "pump": "^1.0.3"
   }
 }
