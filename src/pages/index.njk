@@ -1,0 +1,127 @@
+{% extends "base.njk" %}
+{% import "macros/review.njk" as review %}
+
+{% block body %}
+  <div class="wrapper">
+    <div class="background">
+      <img class="background-image" src="assets/images/blots.jpg">
+    </div>
+
+    <div class="cover">
+      <div class="cover-copy">
+        <h1>
+          SADLANDS
+        </h1>
+        <div class="tagline">
+          Laughter is contagious
+        </div>
+      </div>
+      <div class="gasper">
+        <img src="assets/images/gasmask.png">
+      </div>
+    </div>
+
+    <div class="foreground">
+      <section id="blurb">
+        <div class="copy">
+          <p>
+            Happiness, Despair, Excitement, Hope: If you can feel it, they can bottle it.
+          </p>
+          <p>
+            Phi is a purveyor of bottled emotions.
+          </p>
+          <p>
+            When the factory providing the world’s emotions is sabotaged, Phi’s own world goes up in smoke. He’s
+            one
+            of the few people left who can feel anything at all, and the relentless, Hate-fuelled Gaspers are
+            closing in.
+          </p>
+          <p>
+            Phi embarks on a quest to restart the factory. It’s his only chance for the girl he loves to love
+            again.
+            The journey will take him deep into the heart of the Sadlands, where the very act of breathing can
+            paralyse you with your own Fear.
+          </p>
+          <p>
+            In a place where beasts can use your own Courage to lure you into deadly traps, you can’t even trust
+            your own feelings. Yet, Phi must place his trust in three unlikely companions: a valiant orphan who
+            throws herself headfirst into danger; a rival who Phi has never seen eye-to-eye with; and a
+            mysterious
+            traveller struggling to keep a secret…
+          </p>
+        </div>
+      </section>
+
+      <section id="shop">
+        <div class="copy">
+          <h2>
+            Buy the book
+          </h2>
+          <p>
+            <!-- TODO: Improve copy. Mention Kindle Unlimited -->
+            Sadlands is available as an ebook or paperback from Amazon.
+          </p>
+
+          <div class="shop-display">
+            <div class="shop-cover">
+              <a href="shop?ebook">
+                <img src="assets/images/cover-thumb.jpg">
+              </a>
+            </div>
+
+            <div class="shop-links">
+              <a href="shop/?ebook">Get the eBook</a>
+              <a href="shop/?paperback">Get the Paperback</a>
+              <a href="chapter1">Read a sample</a>
+            </div>
+          </div>
+
+            {% set reviews = [
+            {
+              quote: "Sadlands is a unique idea, with intriguing characters and clever creatures",
+              source: "Ciaran, amazon.co.uk",
+              stars: 5
+            }, {
+              quote: "Good characters, a believable villain and a gripping roll through all of your emotions",
+              source: "RachelC, amazon.co.uk",
+              stars: 5
+            }
+          ] %}
+
+          {% for customerReview in reviews %}
+            {{ review.show(customerReview) }}
+          {% endfor %}
+        </div>
+      </section>
+
+      <section class="content-section" id="about-the-author">
+        <div class="copy">
+          <h2>
+            About the author
+          </h2>
+          <div class="about-wrapper">
+            <div class="image-container">
+              <img class="author-image" src="assets/images/alec-gibson.jpg">
+            </div>
+            <div class="bio">
+              <p>
+                When he’s not describing himself in third person, Alec enjoys describing imaginary people in
+                third
+                person instead. He loves dreaming up unique worlds, chatty characters, and has a soft spot for a
+                good play on words (and occasionally flicking through the Arts & Entertainment section for some
+                good
+                words on plays).
+              </p>
+              <p>
+                By day, Alec is a software developer (giving him an unusual penchant for parentheses), by night
+                he
+                sleeps, and by Jove is he excited to start work on the next book!
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    </div>
+  </div>
+{% endblock %}

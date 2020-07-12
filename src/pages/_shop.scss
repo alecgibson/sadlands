@@ -1,0 +1,23 @@
+section#shop {
+  .shop-display {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+    }
+  }
+
+  .shop-links {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+
+    a {
+      margin: 1rem 0;
+      font-size: 1.75rem;
+      text-decoration: none;
+    }
+  }
+}

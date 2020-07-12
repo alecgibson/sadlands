@@ -1,0 +1,20 @@
+{% macro navigation(chapterNumber) %}
+
+<div class="chapter-navigation">
+  <span class="previous-chapter">
+    {% if chapterNumber > 1 %}
+      <a href="/chapter{{ chapterNumber - 1 }}">
+        < Chapter {{ chapterNumber - 1 }}
+      </a>
+    {% endif %}
+  </span>
+  <span class="next-chapter">
+    {% if chapterNumber < 3 %}
+      <a href="/chapter{{ chapterNumber + 1}}">
+        Chapter {{ chapterNumber + 1 }} >
+      </a>
+    {% endif %}
+  </span>
+</div>
+
+{% endmacro %}}

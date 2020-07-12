@@ -1,0 +1,24 @@
+{% extends "base.njk" %}
+{% import "macros/chapter.njk" as chapter %}
+
+{% block head %}
+<title>Sadlands - Chapter {{ chapterNumber }} - Alec Gibson</title>
+{% endblock %}
+
+{% block body %}
+<div class="chapter-preview">
+  <header>
+    <a href="/">SADLANDS</a>
+  </header>
+
+  <div class="content">
+
+    {{ chapter.navigation(chapterNumber) }}
+
+    {% block chapter %} {% endblock %}
+
+    {{ chapter.navigation(chapterNumber) }}
+
+  </div>
+</div>
+{% endblock %}

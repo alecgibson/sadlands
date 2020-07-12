@@ -1,17 +1,35 @@
 .chapter-preview {
-  a, a:visited {
-    color: #983211;
-  }
+  font-family: 'Gentium Basic', serif;
+  background: white;
 
-  .header-links {
-    top: 69px;
+  header {
+    display: flex;
+    width: 100%;
+    align-content: center;
+    justify-content: center;
+    background: black;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 0px 0.75rem 0.75rem rgba(0,0,0,0.1);
+
+    a {
+      font-family: 'Staatliches', sans-serif;
+      font-weight: normal;
+      text-decoration: none;
+      color: white;
+      font-size: 2rem;
+      @include transition(color);
+
+      &:hover {
+        color: $orange;
+      }
+    }
   }
 
   .content {
     width: 600px;
     max-width: 90vw;
     margin: auto;
-    padding-top: 100px;
     line-height: 1.5;
     text-align: justify;
   }
@@ -20,6 +38,7 @@
     font-size: 1.2em;
     display: flex;
     padding: 2em 1em;
+    justify-content: space-between;
   }
 
   .next-chapter {
@@ -81,15 +100,5 @@
   .chapter-spacer {
     page-break-before: always;
     margin-bottom: 1em;
-  }
-
-  @media (max-width: 710px) {
-    .header-links {
-      top: calc(11vw + 14px);
-    }
-
-    .content {
-      padding-top: 50px;
-    }
   }
 }

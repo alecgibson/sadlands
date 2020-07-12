@@ -18,7 +18,7 @@ gulp.task('clean', function (callback) {
 
 gulp.task('nunjucks', function (callback) {
   pump([
-    gulp.src('src/pages/**/*.+(html|nunjucks)'),
+    gulp.src('src/pages/**/*.+(html|njk)'),
     nunjucksRender({
       path: ['src/templates'] // String or Array
     }),
@@ -43,10 +43,6 @@ gulp.task('sass', function (callback) {
 gulp.task('javascript', function (callback) {
   pump([
     gulp.src([
-      'src/assets/javascript/jquery.min.js',
-      'src/assets/javascript/jquery.scrollme.js',
-      'src/assets/javascript/mobile-menu.js',
-      'src/assets/javascript/smooth-scroll.js',
       'src/assets/javascript/tracking.js'
     ]),
     concat('application.min.js'),
@@ -111,7 +107,7 @@ gulp.task('default',
   ));
 
 gulp.task('watch', function () {
-  gulp.watch('src/**/*.+(html|nunjucks)', gulp.series('nunjucks'));
+  gulp.watch('src/**/*.+(html|njk)', gulp.series('nunjucks'));
   gulp.watch('src/**/*.scss', gulp.parallel('sass', 'redirect-sass'));
   gulp.watch('src/**/*.js', gulp.parallel('javascript', 'redirect-javascript'));
 });

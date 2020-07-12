@@ -1,0 +1,22 @@
+#about-the-author {
+  .about-wrapper {
+    display: flex;
+
+    @media (max-width: $screen-md) {
+      flex-direction: column;
+    }
+  }
+
+  .image-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .author-image {
+    width: 10rem;
+  }
+}
